@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @page {
+            size: 210mm 297mm;
+            margin: 0.25in;
+            -fs-flow-top: "header";
+            -fs-flow-bottom: "footer";
+            -fs-flow-left: "left";
+            -fs-flow-right: "right";
+            border: thin solid black;
+            padding: 1em;
+        }
+
+        #header {
+            font: bold serif;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -fs-move-to-flow: "header";
+        }
+
+        #footer {
+            font-size: 90%;
+            font-style: italic;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -fs-move-to-flow: "footer";
+        }
+
+        #pagenumber:before {
+            content: counter(page);
+        }
+
+        #pagecount:before {
+            content: counter(pages);
+        }
+
+        .title{
+            margin-left: 35%;
+        }
+
+        /*Title*/
+        h1{
+            font-size: 72px;
+            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+        }
+
+        /*Foodtype*/
+        h2{
+            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+            font-size: 58px;
+            margin-left: 10px;
+        }
+
+        /*Foodname*/
+        h3{
+            margin-left: 50px;
+            margin-top: -20px;
+            font-size: 42px;
+            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+        }
+
+        /*Addition Text*/
+        .additionText{
+            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+            font-size: 32px;
+            margin-left: 40px;
+            margin-top: -25px;
+            float:right;
+        }
+
+        .price_number{
+            font-size: 24px;
+        }
+
+        .price_text{
+            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+            font-size: 42px;
+            float:right;
+            margin-top: -35px;
+        }
+
+
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="title">
+    <h1>TITLE_FIELD</h1>
+</div>
+<div id="price_text" class="price_text">
+
+    <p>Menüpreis: <span class="price_number">PRICE_FIELD €</span></p>
+
+</div>
+
+<div id="menu">
+    <h2 style="margin-top: 50px;">Vorspeise</h2>
+    <h3>STARTER_FIELD</h3>
+    <p class="additionText">STARTER_ADDITION_FIELD</p>
+
+    <h2>Hauptgericht</h2>
+    <h3>MAINONE_FIELD</h3>
+    <p class="additionText">MAINONE_ADDITION_FIELD</p>
+
+    <h2 style="margin: -15px 0px -15px 50px;">oder</h2>
+
+    <h2>Hauptgericht</h2>
+    <h3>MAINTWO_FIELD</h3>
+    <p class="additionText">MAINTWO_ADDITION_FIELD</p>
+    <h2>Nachspeise</h2>
+    <h3>DESSERT_FIELD</h3>
+    <p class="additionText" style="margin-bottom: -15px">DESSERT_ADDITION_FIELD</p>
+</div>
+</body>
+</html>

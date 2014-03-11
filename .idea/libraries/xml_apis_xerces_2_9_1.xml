@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="xml-apis-xerces-2.9.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/xml-apis-xerces-2.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText-2.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-renderer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
