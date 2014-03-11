@@ -90,13 +90,13 @@ public class MainWindow extends JFrame {
                     } else if (s.contains(pricePlaceholder)) {
                         s = s.replace(pricePlaceholder, priceTextField.getText());
                     } else if (s.contains(starterAdditionPlaceholder)) {
-                        s = s.replace(starterAdditionPlaceholder, starterAdditionTextField.getText());
+                        s = s.replace(starterAdditionPlaceholder, starterAdditionTextField.getText().isEmpty() ? "﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿\n" : starterAdditionTextField.getText());
                     } else if (s.contains(mainOneAdditionPlaceholder)) {
-                        s = s.replace(mainOneAdditionPlaceholder, mainOneAdditionTextField.getText());
+                        s = s.replace(mainOneAdditionPlaceholder, mainOneAdditionTextField.getText().isEmpty() ? "﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿\n" : mainOneAdditionTextField.getText());
                     } else if (s.contains(mainTwoAdditionPlaceholder)) {
-                        s = s.replace(mainTwoAdditionPlaceholder, mainTwoAdditionTextField.getText());
+                        s = s.replace(mainTwoAdditionPlaceholder, mainTwoAdditionTextField.getText().isEmpty() ? "﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿\n" : mainTwoAdditionTextField.getText());
                     } else if (s.contains(dessertAdditionPlaceholder)) {
-                        s = s.replace(dessertAdditionPlaceholder, dessertAdditionTextField.getText());
+                        s = s.replace(dessertAdditionPlaceholder, dessertAdditionTextField.getText().isEmpty() ? "﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿ ﻿\n" : dessertAdditionTextField.getText());
                     }
 
                     buf.append(s);
@@ -104,7 +104,7 @@ public class MainWindow extends JFrame {
                 }
 
                 ITextRenderer renderer = new ITextRenderer();
-                renderer.getFontResolver().addFont("C:\\WINDOWS\\FONTS\\Mr DeHaviland.ttf", true);
+                renderer.getFontResolver().addFont("html-templates/Vivaldi.ttf", true);
                 renderer.setDocumentFromString(buf.toString());
                 renderer.layout();
 

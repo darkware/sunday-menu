@@ -38,49 +38,53 @@
             content: counter(pages);
         }
 
-        .title{
-            margin-left: 35%;
+        .title {
+            margin-left: 25%;
         }
 
         /*Title*/
-        h1{
+        h1 {
             font-size: 72px;
-            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+            font-family: Vivaldi; /*a name to be used later*/
         }
 
         /*Foodtype*/
-        h2{
-            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+        h2 {
+            font-family: Vivaldi; /*a name to be used later*/
             font-size: 58px;
             margin-left: 10px;
         }
 
         /*Foodname*/
-        h3{
+        h3 {
             margin-left: 50px;
             margin-top: -20px;
             font-size: 42px;
-            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+            font-family: Vivaldi; /*a name to be used later*/
         }
 
         /*Addition Text*/
-        .additionText{
-            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+        .additionText {
+            font-family: Vivaldi; /*a name to be used later*/
             font-size: 32px;
-            margin-left: 40px;
+            margin-left: 100px;
             margin-top: -25px;
-            float:right;
         }
 
-        .price_number{
+        .price_number {
             font-size: 24px;
         }
 
-        .price_text{
-            font-family: 'Mr DeHaviland'; /*a name to be used later*/
+        .price_text {
+            font-family: Vivaldi; /*a name to be used later*/
             font-size: 42px;
-            float:right;
-            margin-top: -35px;
+            float: right;
+            margin-top: -45px;
+        }
+
+        #menu {
+            top: 100px;
+            bottom: 40px;
         }
 
 
@@ -93,26 +97,31 @@
 </div>
 <div id="price_text" class="price_text">
 
-    <p>Menüpreis: <span class="price_number">PRICE_FIELD €</span></p>
+    <p>Menüpreis: <span class="price_number">PRICE_FIELD Euro</span></p>
 
 </div>
 
 <div id="menu">
-    <h2 style="margin-top: 50px;">Vorspeise</h2>
+    <h2 style="margin-top: 130px;">Vorspeise</h2>
+
     <h3>STARTER_FIELD</h3>
+
     <p class="additionText">STARTER_ADDITION_FIELD</p>
 
-    <h2>Hauptgericht</h2>
-    <h3>MAINONE_FIELD</h3>
+    <h2>Hauptgericht nach Wahl</h2>
+
+    <h3>- MAINONE_FIELD</h3>
+
     <p class="additionText">MAINONE_ADDITION_FIELD</p>
 
-    <h2 style="margin: -15px 0px -15px 50px;">oder</h2>
+    <h3>- MAINTWO_FIELD</h3>
 
-    <h2>Hauptgericht</h2>
-    <h3>MAINTWO_FIELD</h3>
     <p class="additionText">MAINTWO_ADDITION_FIELD</p>
+
     <h2>Nachspeise</h2>
+
     <h3>DESSERT_FIELD</h3>
+
     <p class="additionText" style="margin-bottom: -15px">DESSERT_ADDITION_FIELD</p>
 </div>
 </body>
