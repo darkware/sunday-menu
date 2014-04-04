@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact name="sunday-menu:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sunday_menu_jar</output-path>
+    <root id="root">
+      <element id="archive" name="sunday-menu.jar">
+        <element id="module-output" name="sunday-menu" />
+      </element>
+      <element id="library" level="project" name="core-renderer" />
+      <element id="library" level="project" name="commons-net-3.3" />
+      <element id="library" level="project" name="iText-2.0.8" />
+      <element id="library" level="project" name="xml-apis-xerces-2.9.1" />
+    </root>
+  </artifact>
+</component>

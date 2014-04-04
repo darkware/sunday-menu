@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: core-renderer.jar commons-net-3.3.jar iText-2.0.8.jar xml-
+ apis-xerces-2.9.1.jar
+Main-Class: Main
+
