@@ -1,0 +1,83 @@
+
+#pagenumber:before {
+    content: counter(page);
+}
+
+#pagecount:before {
+    content: counter(pages);
+}
+
+.title {
+    margin-left: 15%;
+}
+
+/*Title*/
+h1 {
+    font-size: 54px;
+    font-family: "Plate Gt One Two MT Std"; /*a name to be used later*/
+}
+
+/*Addition Text*/
+.additionText {
+    font-family: "Vivaldi"; /*a name to be used later*/
+    font-size: 26px;
+    margin-left: 100px;
+    margin-top: -25px;
+}
+
+/*Addition Text*/
+.additionText2 {
+    font-family: "Vivaldi"; /*a name to be used later*/
+    font-size: 26px;
+    margin-left: 200px;
+    margin-top: -25px;
+}
+
+.foodNameSpan{
+    margin-left: 50px;
+    margin-top: -20px;
+    font-size: 30px;
+}
+
+.normalText {
+    font-family: "Vivaldi"; /*a name to be used later*/
+}
+
+.boldText{
+    font-family: "Plate Gt One Two MT Std"; /*a name to be used later*/
+}
+
+.type_text {
+    font-family: "Plate Gt One Two MT Std"; /*a name to be used later*/
+    font-size: 28px;
+    font-style: italic;
+    /*margin-top: -45px;*/
+}
+
+.price_number {
+     font-size: 26px;
+     font-family: "Vivaldi";
+     position: absolute;
+     right: 0px;
+ }
+
+.dateText {
+    font-size: 32px;
+    margin-top: -30px;
+    margin-left: 20%;
+    font-family: "Vivaldi";
+}
+
+.footerText{
+    font-family: "Vivaldi";
+    font-size: 18px;
+    font-style: italic;
+    position: absolute;
+    top: 950px;
+}
+
+#menu {
+    top: 100px;
+    width: 100%;
+    position: absolute;
+}

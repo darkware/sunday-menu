@@ -9,6 +9,9 @@
       <element id="library" level="project" name="commons-net-3.3" />
       <element id="library" level="project" name="iText-2.0.8" />
       <element id="library" level="project" name="xml-apis-xerces-2.9.1" />
+      <element id="directory" name="html-templates">
+        <element id="dir-copy" path="$PROJECT_DIR$/html-templates" />
+      </element>
     </root>
   </artifact>
 </component>

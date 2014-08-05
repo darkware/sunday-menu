@@ -1,7 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html>
 <head>
     <style>
+        @font-face {
+            font-family: "Plate Gt One Two MT Std";
+            src: url("plategoth.ttf");
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+        }
+
+        @font-face {
+            font-family: "Vivaldi";
+            src: url("Vivaldi.ttf");
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+        }
+
         @page {
             size: 210mm 297mm;
             margin: 0.25in;
@@ -12,114 +27,100 @@
             border: thin solid black;
             padding: 1em;
         }
-
-        #header {
-            font: bold serif;
-            position: absolute;
-            top: 0;
-            left: 0;
-            -fs-move-to-flow: "header";
-        }
-
-        #footer {
-            font-size: 90%;
-            font-style: italic;
-            position: absolute;
-            top: 0;
-            left: 0;
-            -fs-move-to-flow: "footer";
-        }
-
-        #pagenumber:before {
-            content: counter(page);
-        }
-
-        #pagecount:before {
-            content: counter(pages);
-        }
-
-        .title {
-            margin-left: 25%;
-        }
-
-        /*Title*/
-        h1 {
-            font-size: 72px;
-            font-family: Vivaldi; /*a name to be used later*/
-        }
-
-        /*Foodtype*/
-        h2 {
-            font-family: Vivaldi; /*a name to be used later*/
-            font-size: 58px;
-            margin-left: 10px;
-        }
-
-        /*Foodname*/
-        h3 {
-            margin-left: 50px;
-            margin-top: -20px;
-            font-size: 42px;
-            font-family: Vivaldi; /*a name to be used later*/
-        }
-
-        /*Addition Text*/
-        .additionText {
-            font-family: Vivaldi; /*a name to be used later*/
-            font-size: 32px;
-            margin-left: 100px;
-            margin-top: -25px;
-        }
-
-        .price_number {
-            font-size: 24px;
-        }
-
-        .price_text {
-            font-family: Vivaldi; /*a name to be used later*/
-            font-size: 42px;
-            float: right;
-            margin-top: -45px;
-        }
-
-        #menu {
-            top: 100px;
-        }
     </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 <div class="title">
     <h1>TITLE_FIELD</h1>
-    <h1 style="font-size: 32px;margin-top: -30px; margin-left: 20%;">vom DATE_FIELD</h1>
-</div>
-<div id="price_text" class="price_text">
 
-    <p>Menüpreis: <span class="price_number">PRICE_FIELD Euro</span></p>
-
+    <p class="dateText">vom DATE_FIELD</p>
 </div>
+
 
 <div id="menu">
-    <h2 style="margin-top: 110px;">Vorspeise</h2>
+    <div>
+        <p class="type_text">
+            <span style="text-decoration: underline;"><b>Menüpreis: </b></span>
+            <span class="price_number">TOTAL_PRICE_FIELD Euro</span>
+        </p>
+    </div>
+    <div>
+        <p class="type_text" style="margin-top: 10px;">
+            <span style="text-decoration: underline;"><b>VORSPEISE: </b></span>
+            <span class="price_number">STARTER_PRICE_FIELD Euro</span>
+        </p>
+    </div>
 
-    <h3>STARTER_FIELD</h3>
+    <div>
+        <p class="foodNameSpan"><span class="normalText">STARTER_FIELD </span> <span
+                class="boldText"><b>STARTER2_FIELD </b></span>
+            <span class="normalText">STARTER3_FIELD</span>
+        </p>
 
-    <p class="additionText">STARTER_ADDITION_FIELD</p>
+        <p class="additionText">STARTER_ADDITION_FIELD</p>
 
-    <h2>Hauptgericht nach Wahl</h2>
+        <p class="additionText2">STARTER_ADDITION2_FIELD</p>
+    </div>
 
-    <h3>- MAINONE_FIELD</h3>
+    <div>
+        <p class="type_text" style="margin-top: 10px;">
+            <span style="text-decoration: underline;"><b>HAUPTGERICHT 1: </b></span>
+            <span class="price_number">MAINONE_PRICE_FIELD Euro</span>
+        </p>
+    </div>
+    <div>
+        <p class="foodNameSpan"><span class="normalText">MAINONE_FIELD </span> <span
+                class="boldText"><b>MAINONE2_FIELD </b></span>
+            <span class="normalText">MAINONE3_FIELD</span>
+        </p>
 
-    <p class="additionText">MAINONE_ADDITION_FIELD</p>
+        <p class="additionText">MAINONE_ADDITION_FIELD</p>
 
-    <h3>- MAINTWO_FIELD</h3>
+        <p class="additionText2">MAINONE_ADDITION2_FIELD</p>
+    </div>
+    <div>
+        <p class="type_text" style="margin-top: 10px;">
+            <span style="text-decoration: underline;"><b>HAUPTGERICHT 2: </b></span>
+            <span class="price_number">MAINTWO_PRICE_FIELD Euro</span>
+        </p>
+    </div>
+    <div>
 
-    <p class="additionText">MAINTWO_ADDITION_FIELD</p>
+        <p class="foodNameSpan"><span class="normalText">MAINTWO_FIELD </span> <span
+                class="boldText"><b>MAINTWO2_FIELD </b></span>
+            <span class="normalText">MAINTWO3_FIELD</span>
+        </p>
 
-    <h2>Nachspeise</h2>
+        <p class="additionText">MAINTWO_ADDITION_FIELD</p>
 
-    <h3>DESSERT_FIELD</h3>
+        <p class="additionText2">MAINTWO_ADDITION2_FIELD</p>
+    </div>
 
-    <p class="additionText" style="margin-bottom: -15px">DESSERT_ADDITION_FIELD</p>
+    <div>
+        <p class="type_text" style="margin-top: 10px;">
+            <span style="text-decoration: underline;"><b>NACHSPEISE: </b></span>
+            <span class="price_number">DESSERT_PRICE_FIELD Euro</span>
+        </p>
+    </div>
+
+    <div>
+        <p class="foodNameSpan"><span class="normalText">DESSERT_FIELD </span> <span
+                class="boldText"><b>DESSERT2_FIELD </b></span>
+            <span class="normalText">DESSERT3_FIELD</span>
+        </p>
+
+        <p class="additionText">DESSERT_ADDITION_FIELD</p>
+
+        <p class="additionText2">DESSERT_ADDITION2_FIELD</p>
+    </div>
+</div>
+<div>
+    <p class="footerText">
+        <span>Wir wünschen Ihnen recht guten Appetit und bedanken uns herzlich für Ihren Besuch !</span>
+        <br/>
+        <span style="margin-left: 60%">Die Wirtsleut Maria &amp; Stefan</span>
+    </p>
 </div>
 </body>
 </html>
